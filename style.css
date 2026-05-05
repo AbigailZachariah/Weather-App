@@ -53,3 +53,39 @@ body{
 .search button img{
     width:16px;
 }
+
+.weather img{
+    width: 166px;
+    margin-top: 30px;
+}
+ 
+.temp{
+    font-size: 61px;
+}
+
+.City{
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    margin: 41px 38px;
+}
+
+.col img{
+    width: 45px;
+    margin: 15px 7px;
+}
+
+.col p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2px;
+}

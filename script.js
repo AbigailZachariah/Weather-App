@@ -8,6 +8,8 @@ const WeatherIcon = document.querySelector(".icon");
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     if (response.status == 404) {
+        //Explicitly setting it back to invalid city name
+        document.querySelector(".error").innerHTML="<p>Invalid City Name</p>";
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
     }

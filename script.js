@@ -45,5 +45,14 @@ async function checkWeather(city) {
 }
 
 searchBtn.addEventListener("click", () => {
-    checkWeather(searchBox.value);
-})
+    // Clean up extra leading/trailing spaces
+    const cityValue = searchBox.value.trim();
+
+    if (cityValue === "") {
+        document.querySelector(".error").innerHTML = "<p>Enter a city name</p>";
+        document.querySelector(".error").style.display = "block";
+        document.querySelector(".weather").style.display = "none";
+    } else {
+        checkWeather(cityValue);
+    }
+});
